@@ -1,2 +1,2 @@
-# cucumber-java
-Cucumber Java
+# cucumber-java-framework
+Cucumber Java Framework
