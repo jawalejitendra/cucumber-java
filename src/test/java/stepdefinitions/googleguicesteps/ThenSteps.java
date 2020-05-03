@@ -4,9 +4,13 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import shareddata.DataContext;
 
-public class ThenSteps {
+public class ThenSteps extends DataContext {
 
-    DataContext dataContext;
+    private DataContext dataContext;
+
+    public ThenSteps(DataContext dataContext) {
+        this.dataContext = dataContext;
+    }
 
     @Then("^the result should be (\\d+)$")
     public void theResultShouldBe(int arg0) {

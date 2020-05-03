@@ -18,8 +18,8 @@ Feature: This is a sample feature
     When I add these two numbers
     Then result should be 25
 
-#  @googleguice
-#  Scenario: Multiply two number
-#    Given I have two number 5 and 10 to multiply
-#    When I multiply the numbers
-#    Then the result should be 50
+  @googleguice
+  Scenario: Multiply two number
+    Given I have two number 5 and 10 to multiply
+    When I multiply the numbers
+    Then the result should be 50
