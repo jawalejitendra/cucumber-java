@@ -9,23 +9,21 @@ import shareddata.DataContext;
 
 public class Feature1Stepdefs {
 
-
-    @Inject
-    DataContext dataContext;
+int num1, num2, result;
 
     @Given("I have two numbers {int} and {int}")
     public void iHaveTwoNumbersAnd(int arg0, int arg1) {
-        dataContext.num1 = arg0;
-        dataContext.num2 = arg1;
+       num1 = arg0;
+       num2 = arg1;
     }
 
     @When("I add these two numbers")
     public void iAddTheseTwoNumbers() {
-        dataContext.result = dataContext.num1 + dataContext.num2;
+       result =num1 +num2;
     }
 
     @Then("result should be {int}")
     public void resultShouldBe(int arg0) {
-        Assert.assertEquals(arg0, dataContext.result);
+        Assert.assertEquals(arg0,result);
     }
 }
